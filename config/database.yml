@@ -21,6 +21,8 @@ default: &default
 production:
   adapter: mysql2
   database: meet_up_mates
+  username: priyanka
+  password: MeetingMates
   pool: 5
   timeout: 5000
 
@@ -54,8 +56,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: meet-up-mates_production
-  username: meet-up-mates
-  password: <%= ENV['MEET-UP-MATES_DATABASE_PASSWORD'] %>
+#production:
+#  <<: *default
+#  database: meet-up-mates_production
+#  username: meet-up-mates
+#  password: <%= ENV['MEET-UP-MATES_DATABASE_PASSWORD'] %>
