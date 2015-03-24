@@ -25,6 +25,7 @@ production:
   password: MeetingMates
   pool: 5
   timeout: 5000
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
